@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heart</title>
+    <style>
+    
+        .image_wrap{
+            position: relative;
+            width: 350px;
+        }
+        .image1 {
+            position: absolute;
+            z-index: 1;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 240px;
+            aspect-ratio: 1;
+            object-fit: cover;
+            --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+            -webkit-mask-box-image: var(--_m);
+                        mask-border: var(--_m);
+            clip-path: polygon(-41% 0,50% 91%, 141% 0);
+        }
+        .image2 {
+            width: 350px;
+            aspect-ratio: 1;
+            object-fit: cover;
+            --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+            -webkit-mask-box-image: var(--_m);
+                        mask-border: var(--_m);
+            clip-path: polygon(-41% 0,50% 91%, 141% 0);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="image_wrap">
+        <img class="image1" src="img/heart/singer.jpeg"  alt="singer">
+        <img class="image2" src="img/heart/rainbow.jpg"  alt="bg-imamge">
+    </div>
+     
+</body>
+</html>
