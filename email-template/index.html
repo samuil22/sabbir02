@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Email Templates - Sabbir 02</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="../img/favicon.ico" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../css/style.css" rel="stylesheet">
+  
+  <style>
+    .email-template-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 100%;
+    }
+    .email-template-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    .email-template-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-bottom: 3px solid #0078ff;
+    }
+    .email-template-card .card-body {
+      padding: 20px;
+      background: #fff;
+    }
+    .email-template-card h5 {
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .email-template-card p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .email-template-card .btn {
+      background: #0078ff;
+      color: #fff;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+    .email-template-card .btn:hover {
+      background: #0056b3;
+      color: #fff;
+    }
+    .page-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      padding: 80px 0 60px;
+      margin-top: 70px;
+    }
+    .page-header h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .page-header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    .templates-section {
+      padding: 80px 0;
+      background: #f8f9fa;
+    }
+    /* Navbar Visibility Fix */
+    #mainNav {
+      background-color: rgba(255, 255, 255, 0.95) !important;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    #mainNav.navbar-trans {
+      background-color: rgba(255, 255, 255, 0.95) !important;
+    }
+    #mainNav .navbar-brand {
+      color: #333 !important;
+      font-weight: 700;
+    }
+    #mainNav .nav-link {
+      color: #333 !important;
+    }
+    #mainNav .nav-link:hover,
+    #mainNav .nav-link.active {
+      color: #0078ff !important;
+    }
+    #mainNav .navbar-toggler span {
+      background-color: #333 !important;
+    }
+  </style>
+ 
+</head>
+
+<body id="page-top"> 
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="../index.html#page-top">SABBIR</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../index.html#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../index.html#service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../index.html#work">Work</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#templates">Email Templates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="../index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1 class="text-white">Email Templates</h1>
+          <p>Professional, responsive email templates built with HTML and inline CSS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Templates Section -->
+  <section id="templates" class="templates-section">
+    <div class="container">
+      <div class="row">
+        
+        <!-- Fitness Template -->
+        <div class="col-md-4 mb-4">
+          <div class="email-template-card box-shadow-full">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=400&fit=crop" alt="Fitness Email Template">
+            <div class="card-body">
+              <h5>Fitness Newsletter</h5>
+              <p>A modern fitness-themed email template with hero banner, feature sections, and social media integration.</p>
+              <a href="fitness.html" class="btn" target="_blank">View Template</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter Template -->
+        <div class="col-md-4 mb-4">
+          <div class="email-template-card box-shadow-full">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&h=400&fit=crop" alt="Newsletter Email Template">
+            <div class="card-body">
+              <h5>Newsletter</h5>
+              <p>Clean and professional newsletter template perfect for regular updates and announcements.</p>
+              <a href="newsletter.html" class="btn" target="_blank">View Template</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- E-commerce Template -->
+        <div class="col-md-4 mb-4">
+          <div class="email-template-card box-shadow-full">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop" alt="E-commerce Email Template">
+            <div class="card-body">
+              <h5>E-commerce Promotional</h5>
+              <p>Modern e-commerce email with product grid, discount offers, and call-to-action buttons.</p>
+              <a href="ecommerce.html" class="btn" target="_blank">View Template</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pastel Marketing Template -->
+        <div class="col-md-4 mb-4">
+          <div class="email-template-card box-shadow-full">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="Pastel Marketing Email Template">
+            <div class="card-body">
+              <h5>Pastel Marketing</h5>
+              <p>Soft pastel-themed marketing email with modern design, testimonials, and elegant CTA sections.</p>
+              <a href="pastel-marketing.html" class="btn" target="_blank">View Template</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Password Reset Template -->
+        <div class="col-md-4 mb-4">
+          <div class="email-template-card box-shadow-full">
+            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&h=400&fit=crop" alt="Password Reset Email Template">
+            <div class="card-body">
+              <h5>Password Reset</h5>
+              <p>Professional password reset email template with VML support for Outlook compatibility.</p>
+              <a href="password-reset.html" class="btn" target="_blank">View Template</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order Confirmation Template -->
+        <div class="col-md-4 mb-4">
+          <div class="email-template-card box-shadow-full">
+            <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?w=600&h=400&fit=crop" alt="Order Confirmation Email Template">
+            <div class="card-body">
+              <h5>Order Confirmation</h5>
+              <p>Clean order confirmation template with order summary, totals, and billing information.</p>
+              <a href="order-confirmation.html" class="btn" target="_blank">View Template</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Welcome Template -->
+        <div class="col-md-4 mb-4">
+          <div class="email-template-card box-shadow-full">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop" alt="Welcome Email Template">
+            <div class="card-body">
+              <h5>Welcome Email</h5>
+              <p>Welcoming email template for new users with onboarding information and next steps.</p>
+              <a href="welcome.html" class="btn" target="_blank">View Template</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(../img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Send Message Us
+                    </h5>
+                  </div>
+                  <div>
+                      <form action="" method="post" role="form" class="contactForm">
+                      <div id="sendmessage">Your message has been sent. Thank you!</div>
+                      <div id="errormessage"></div>
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left">
+                      Get in Touch
+                    </h5>
+                  </div>
+                  <div class="more-info">
+                    <p class="lead">
+                       
+                    </p>
+                    <ul class="list-ico">
+                      <li><span class="ion-ios-location"></span> Nurjahan Road, Mohammadpur, Dhaka 1207.</li>
+                      <li><span class="ion-ios-telephone"></span>+88 01985-496494</li>
+                      <li><span class="ion-email"></span> samiulsabbir8262@gmail.com</li>
+                    </ul>
+                  </div>
+                  <div class="socials">
+                    <ul>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>SBR</strong>. All Rights Reserved</p>
+              <div class="credits"> 
+                Designed by SABBIR</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/popper/popper.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="../lib/counterup/jquery.counterup.js"></script>
+  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../lib/lightbox/js/lightbox.js"></script>
+  <script src="../lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="../contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
