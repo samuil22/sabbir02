@@ -706,37 +706,132 @@ a:hover {
 
 .service-box {
   background-color: #fff;
-  padding: 2.5rem 1.3rem;
-  border-radius: 1rem;
+  padding: 3rem 2rem;
+  border-radius: 15px;
   margin-bottom: 3rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #0078ff 0%, #0056b3 50%, #0078ff 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 120, 255, 0.2);
+  border-color: #0078ff;
+}
+
+.service-box:hover::before {
+  transform: scaleX(1);
 }
 
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
+  background: linear-gradient(135deg, #0078ff 0%, #0056b3 100%);
+  box-shadow: 0 10px 30px rgba(0, 120, 255, 0.4);
+  transform: scale(1.1) rotate(5deg);
 }
 
 .service-box .service-ico {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #1e1e1e;
+  text-align: center;
+  position: relative;
 }
 
 .service-box .ico-circle {
   transition: all 500ms ease;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #0078ff;
+  box-shadow: 0 5px 15px rgba(0, 120, 255, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-box .s-title {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  padding: .4rem 0;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.service-box:hover .s-title {
+  color: #0078ff;
 }
 
 .service-box .s-description {
   color: #4e4e4e;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  text-align: center;
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+
+.service-box .service-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Service section spacing improvements */
+.services-mf {
+  padding: 4rem 0;
+}
+
+.services-mf .row {
+  margin-bottom: 2rem;
+}
+
+/* Responsive adjustments for service boxes */
+@media (max-width: 768px) {
+  .service-box {
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .service-box .ico-circle {
+    font-size: 3rem;
+  }
+
+  .service-box .s-title {
+    font-size: 1.3rem;
+  }
+
+  .service-box .s-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .service-box {
+    padding: 3.5rem 2.5rem;
+  }
 }
 
 /*======================================
